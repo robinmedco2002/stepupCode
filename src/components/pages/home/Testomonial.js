@@ -49,7 +49,7 @@ const testomonial = () => {
 
 const Card = ({ img }) => {
 return (
-  <div
+   <div
     style={{
       display: "flex",
       alignItems: "center",
@@ -75,10 +75,7 @@ return (
     />
     <p>
     <i className="bx bxs-quote-alt-left quote-icon-left"></i> <span>
-      Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
-      Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
-      tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
-      fringilla massa. Etiam hendrerit dolor eget rutrum </span>
+    They had brillant project management. Clear communication and impeccable service </span>
       <i className="bx bxs-quote-alt-right quote-icon-right"></i>
 
     </p>
