@@ -10,8 +10,8 @@ const Abt = () => {
                 <div className="container">
 
                     <div className="row">
-                        <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" data-aos="fade-right">
-                            <Link to="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox play-btn mb-4"></Link>
+                        <div id="heroabt" className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" data-aos="fade-right">
+                            <Link to="https://www.youtube.com/watch?v=jDDaplaOz7Q" ></Link>
                         </div>
 
                         <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">

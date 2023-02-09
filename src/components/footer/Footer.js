@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../su_logo.png'
 
 const Footer = () => {
   return (
@@ -14,14 +15,22 @@ const Footer = () => {
     <div className="row">
 
       <div className="col-lg-3 col-md-6 footer-contact">
-        <h3>StepUp Software</h3>
-        
-          Preet Vihar <br />
+      <span>
+      <br /><br />
+      <a href="/">
+          <img src= {logo} style={{width:220, marginTop: -10}} />
+          </a>
+      </span>
+
+        {/* <h3>StepUp Software</h3> */}
+        <br /><br />   <br />
+          {/* Preet Vihar <br />
           New Delhi <br />
-          India <br /><br/>
-          <strong>Phone:</strong> +91 5589 55488 55<br/>
+          India <br /><br/> */}
+          <p style={{ "fontWeight": "600", 'color':'#635551', "fontFamily": "Poppins"}}>
+          <strong>Phone:</strong> +91 9818771015<br/>
           <strong>Email:</strong> info@stepupsoft.com<br/>
-       
+          </p>
       </div>
 
       <div className="col-lg-2 col-md-6 footer-links">
@@ -64,19 +73,23 @@ const Footer = () => {
 <div className="container d-lg-flex py-4">
 
   <div className="me-lg-auto text-center text-lg-start">
-    <div className="copyright"> 2022
+  <p>
+    <div className="copyright"> 
+   
+    2023
       &copy; Copyright <strong><span>StepUp Software</span></strong>. All Rights Reserved
+      
     </div>
     <div className="credits">
     
       Designed by <Link to="/">StepUp Software</Link>
     </div>
+    </p>
   </div>
   <div className="social-links text-center text-lg-right pt-3 pt-lg-0">
     <Link to="#" className="twitter"><i className="bx bxl-twitter"></i></Link>
     <Link to="#" className="facebook"><i className="bx bxl-facebook"></i></Link>
     <Link to="#" className="instagram"><i className="bx bxl-instagram"></i></Link>
-    <Link to="#" className="google-plus"><i className="bx bxl-skype"></i></Link>
     <Link to="#" className="linkedin"><i className="bx bxl-linkedin"></i></Link>
   </div>
 </div>

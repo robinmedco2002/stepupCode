@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import PortfolioData from './data/PortfolioData';
 
 const Portfolio = () => {
@@ -15,12 +15,39 @@ const filterItem = (portfolioItem) => {
   return (
     <>
     
+
+ {/* <section id="heroport" className="d-flex flex-column justify-content-center align-items-center">
+    <div className="container" data-aos="fade-in">
+      <h1>Portfolio</h1>
+      <div >
+    
+							</div>
+     
+      <h2>View our case studies to see a selection of our clients and how we have
+helped them to take their business to the next level
+
+  </h2>
+      <div className="d-flex align-items-center">
+       
+      
+      </div>
+    </div>
+  </section> */}
+
+
+
+
+
+
+
     <section id="portfolio" className="portfolio">
       <div className="container">
 
         <div className="section-title">
           <h2 data-aos="fade-up">Portfolio</h2>
-          <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p data-aos="fade-up"> Some of our recent web development projects. </p>
+          <p data-aos="fade-up"> View our case studies to see a selection of our clients and how we have
+helped them to take their business to the next level</p>
         </div>
 
         <div className="row" data-aos="fade-up" data-aos-delay="100">
@@ -47,14 +74,16 @@ const filterItem = (portfolioItem) => {
     
 
 <div className="col-lg-4 col-md-6 portfolio-item filter-app" key={id}>
-<Link to ={link} target="_blank" className="details-link " title="More Details">
-<img src={image}  to= {link} className="img-fluid" alt="" /> 
-</Link>
+<a href ={link} rel="noreferrer" target="_blank" className="details-link " title="More Details">
+<img src={image}  href= {link} className="img-fluid" alt="" /> 
+</a>
   
   <div className="portfolio-info ">
-    <h4>{name}</h4>
+    <h4 >{name}</h4>
     <p>{description}</p>
-      <Link to ={link} className="details-link " title="More Details"><i className="bx bx-link"></i></Link>
+      {/* <Link to ={link} className="details-link " title="More Details" rel='noopener' target='_blank'><i className="bx bx-link"></i></Link> */}
+      <a href={link} className="details-link " title="More Details" rel="noreferrer" target='_blank'><i className="bx bx-link"></i></a>
+  
   </div>
 </div>
 

@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Container} from 'react-bootstrap'
+import logo from '../../su_logo.png'
 
 
 const StepupNavbar = () => {
@@ -13,7 +14,13 @@ const StepupNavbar = () => {
   
   <Navbar collapseOnSelect bg="light" expand="lg" sticky="top">
   <Container>
-        <Navbar.Brand href="/"><h1> Step<span>Up</span> Software</h1></Navbar.Brand>
+        <Navbar.Brand href="/"> 
+        <a href="/">
+          <img src= {logo} style={{width:180, marginTop: -10}} />
+          </a>
+
+         {/* <h1> Step<span>Up</span> Software</h1> */}
+         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
